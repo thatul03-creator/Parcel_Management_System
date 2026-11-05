@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Management System</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connect JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Parcel Management</h1>  x1x 
+        <span>Student Parcel Dashboard</span>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Welcome to Parcel Management System</h2>
+            <p>Enter your registration number to view your parcels.</p>
+        </section>
+
+        <section class="form-box">
+            <h2>Find My Parcels</h2>
+
+            <div class="form-group">
+                <label for="registrationNumber">Registration Number</label>
+
+                <input
+                    type="text"
+                    id="registrationNumber"
+                    placeholder="Enter your registration number"
+                    autocomplete="off"
+                >
+            </div>
+
+            <button type="button" id="viewParcelsButton">
+                View My Parcels
+            </button>
+
+            <div id="message" aria-live="polite"></div>
+        </section>
+
+        <section class="cards" aria-label="Parcel summary">
+
+            <div class="card">
+                <h3>Registration Number</h3>
+                <div class="number" id="regDisplay">---</div>
+            </div>
+
+            <div class="card">
+                <h3>Total Parcels</h3>
+                <div class="number" id="totalParcels">0</div>
+            </div>
+
+            <div class="card">
+                <h3>Delivered</h3>
+                <div class="number" id="deliveredParcels">0</div>
+            </div>
+
+        </section>
+
+        <section class="parcel-section">
+
+            <h2>My Parcels</h2>
+
+            <div id="parcelList">
+                <p class="empty-message">
+                    Enter your registration number above to see your parcels.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Parcel Management System
+    </footer>
+
+</body>
+</html>
